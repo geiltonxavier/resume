@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://geiltonxavier.dev/}{\Large Geilton Xavier Santos de Jesus}} & Email : \href{mailto:geilton@live.com}{geilton@live.com}\\
+  \href{http://geiltonxavier.dev/}{http://geiltonxavier.dev} & Mobile : \href{tel:+351 910 702 889}{+351 910 702 889} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Cruzeiro do Sul}{São Paulo, Brazil}
+      {Bachelor of Technology - BTech in Systems Analysis and Development;  GPA: 4.00}{Feb. 2013 -- Oct. 2015}
+    \resumeSubheading
+      {University São Judas Tadeu}{São Paulo, Brazil}
+      {Bachelor of Computer Systems Information; Dropoout}{Jan. 2012 -- Feb. 2013}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {NovaBase Group}{Lisbon, Portugal}
+    {Senior .NET Software Developer, Full Stack}{Apr 2021 - Current}
+    \resumeItemListStart
+      \resumeItem{Main Responsibilities}
+        {As part of the Center for Enablement (C4E), I support teams in .NET development best practices, help to promote innovation through internal trainings (TechForms, TechLeads), always with practical examples;
+        
+        For existing projects, I am always involved in technical decisions about the scalability of applications used transversally between the various delivery teams.
+        
+        My work is always aligned on the implementation of systems using Domain-Driven Design (DDD), Test-Driven Development (TDD).
+        
+        As a member of the architecture team, my role is to facilitate the development of new projects, creating solutions and libraries that help the delivery teams during the development of new applications and maintenance of existing ones.
+        
+        Tech Stack: .NET Core, .NET Framework, .NET 6, SQL Server, Azure Devops, Azure Functions, SonarQube, Docker}
+    
+        \resumeItem{CLI/Template for Visual Studio}
+        {Currently responsible for creating and maintaining a template for Visual Studio, which follows the separations and organization proposed by Clean Architecture, aligned with internal particularities of the company, and through this architecture (template), the teams can easily start the development of new APIs and Async Process (Consoles, Workers),;
+        Tech Stack: .NET 6, OpenAPI, Serilog, Notification Pattern, Polly, DDD, TDD, Log Interceptor, Health Checks }
+        \resumeItem{Files Management}
+        {Rest API for manipulation of files, used by several internal projects;
+        Tech Stack: .NET 6, Rest API, Serilog, Streaming, Polly}
+        \resumeItem{Azure DevOps Data Collect}
+        {microservico responsible for collecting information from all azure devops projects, with the ability to identify duplicate projects and possible project owners based on information from the commit history;
+        Tech Stack: .NET 6, Serilog, Notification Alerts}
+        \resumeItemListEnd
+
+
+    \resumeSubheading
+    {Agap2IT Portugal}{Lisbon, Portugal}
+    {Senior .NET Software Developer, Full Stack}{Jan 2020 - Mar 2021}
+    \resumeItemListStart
+      \resumeItem{Marketplace Platform}
+        {I worked at the SoftFinan\ça client, in the product engineering team and currently work directly on the development of Marketplace and Internet Banking platforms.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+    {Mttechne, Construindo Soluções}{São Paulo, Brazil}
+    {Senior .NET Software Developer, Full Stack}{Jul 2019 - Dec 2019}
+    \resumeItemListStart
+      \resumeItem{Ticket Shop E-commerce}
+        {I worked in the development of the Ticket Shop E-commerce (Ticket's prepaid card acquiring platform)
+        I have also worked on many other services that make up the process for finalizing and delivering a card.;
+        Tech Stack: .NET ecosystem (.NET Framework, .NET Core, APIs, C#), Kubernetes, GoCD, RabbitMQ, Oracle, Angular, Batch Processing, Domain-driven design (DDD) (design approach), TDD}
+      \resumeItem{Financial System}
+        {I worked in the development of the Financial System (HUB between all financial transactions);
+        System based on microservices.;
+        Tech Stack: .NET ecosystem (.NET Core, APIs, C#), Oracle, Docker, Rancher, Kubernetes, GoCD, RabbitMQ, Angular, Domain-driven design (DDD) (design approach), TDD}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Vizir Software Studio}{São Paulo, Brazil}
+    {Senior .NET Software Developer, Full Stack}{Sep 2017 - Jun 2019}
+    \resumeItemListStart
+      \resumeItem{Global Account Register}
+        {I worked in the development of the Global Account Register (Global system for creating sales consultant accounts); 
+        Development of integrations with payment gateways; I created Proof of Concepts on the services (AWS Lambda, SNS, SQS, API Management) describing technically the configuration of each service for future project implementation.;
+        Tech Stack (Node.js, Express.js, AWS Lambda, API Gateway, SNS, SQS, MySQL, Knex.js)}
+      \resumeItem{Financial System}
+        {I worked in the development of the Financial System (HUB between all financial transactions);
+        System based on microservices.;
+        Tech Stack: .NET ecosystem (.NET Core, APIs, C#), Oracle, Docker, Rancher, Kubernetes, GoCD, RabbitMQ, Angular, Domain-driven design (DDD) (design approach), TDD}
+      \resumeItem{TicketLog System}
+        {I worked in the development of the TicketLog system (fleet management platform);
+        Tech Stack: .NET ecosystem (WCF, WebAPI, C#), Domain-driven design (DDD) (design approach), TDD}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {FCamara Consulting \& Training}{São Paulo, Brazil}
+    {Senior Software Developer, Full Stack}{Aug 2017 - Sep 2017}
+    \resumeItemListStart
+      \resumeItem{Frontend Initial Architecture}
+        {Performing the entire software development cycle of the application - from development to maintenance on the frontend with Angular. Tech Stack: Angular, WebAPI.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+    {Deal}{São Paulo, Brazil}
+    {Senior Software Developer, Full Stack}{Sep 2016 - Aug 2017}
+    \resumeItemListStart
+      \resumeItem{Loyalty and Incentive Programs}
+        {Analysis and development of incentive programs for clients such as Nestlé, BRF, Hypermarcas, Coty and Vivo;
+        Development of Ecommerce platforms;
+        Participation in projects with aggressive deadlines and continuous delivery through strong implementation of SCRUM, the methodology adopted in the project;
+        Direct integration with Web Awards system through services to redeem points in ecommerce.
+        Tech Stack: C#, ASP.NET Core, Web API, Entity framework, Dapper, Azure (Storage, API Management, Web Apps), CI/CD.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Vizir Software Studio}{São Paulo, Brazil}
+      {Software Developer, Full Stack}{Aug 2015 - Jun 2016}
+      \resumeItemListStart
+        \resumeItem{VCPI}
+          {Bug fixes and new feature developments on existing systems; Tech Stack: Ruby On Rails, Capistrano, ElasticBeanStalk, TDD
+          (Rspec), BDD (Cucumber), MySql, PostgreSQL, Jquery, git, bitbucket, application server (Puma, Unicorn), background processing (Sidekiq, delayed job)}
+        \resumeItem{ISA CTEEP}
+          {I worked developing a system for the control and management of electrical energy transmission equipment. Tech Stack: .NET, ASP.NET MVC, C#, ADO.NET ,Entity Framework, JQuery, Javascript, SQL Server}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+    {SOFHAR Gestão e Tecnologia S.A}{São Paulo, Brazil}
+    {.NET Developer}{Jun 2014 - Sep 2015}
+    \resumeItemListStart
+      \resumeItem{SELJ - Secretaria Municipal de Esporte, Lazer e Juventude}
+        {Development and maintenance of a system for the S\ão Paulo State Sports Secretariat - it was a system responsible for managing all sports events;
+
+        Responsible for maintaining and evolving this system, creating new features and applying improvements to it.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Confitec Sistemas de Computação}{São Paulo, Brazil}
+      {.NET Developer Junior}{Sep 2013 - Jun 2014}
+      \resumeItemListStart
+        \resumeItem{Systems Chemical Analysis}
+          {I worked on the development and maintenance of a system for Central Analítica for (Instituto de Quimica - USP);
+           This system was used by those who intended to carry out experiments with the university's machines. Tech Stack: ASP. NET WebForms, VB.NET, ADO.NET, EF, Telerik}
+        \resumeItem{Cargo Control System}
+          {Development and maintenance of a load control system for the construction of the Usina Hidrelétrica de Belo Monte}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FCamara Consulting \& Training}{São Paulo, Brazil}
+      {.NET Developer}{Jul 2013 - Sep 2013}
+      \resumeItemListStart
+        \resumeItem{Bematech ERP}
+          {Development and Migration of an ERP developed in Windows Forms to the Web. Tech Stack: ASP.NET MVC, Razor, JQuery, HTML 5.}
+        \resumeItem{Enterprise Engine Search}
+          {Maintenance of search engine pages in e-commerce portals, performing optimization using Apache Solr a Enterprise Engine Search.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Eris Sistemas de Informática}{São Paulo, Brazil}
+      {Junior Software Developer}{Jan 2012 - Dec 2013}
+      \resumeItemListStart
+        \resumeItem{ERP - Enterprise resource planning}
+          {I worked developing the new version, and I could participate in the following modules: Sales, Stock and Financial. Tech Stack: .NET, C#, WinForms, SQL Server, Crystal Reports.}
+        \resumeItem{.NET Framework}
+          {I was responsible for disseminating knowledge about the .NET platform with C# and OOP, the developers of my team, until then only knew Visual Basic 6.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Aprenda GO}
+      {Open source Knowledge center for the Go programming language.}
+    \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C#, TypeScript/Javascript, Ruby, SQL}
+     \hfill
+     \textbf{Technologies}{: Azure, RabbitMQ, Kafka, Docker, Redis, .NET Core, .NET 6, .NET Framework, Angular 2+ }
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
